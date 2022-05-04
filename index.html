@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Mo's First Tailwind Css template</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav >
+    <!-- Flex container -->
+    <div id="navbar" class="container flex fixed z-10 justify-around py-5 items-center min-w-full">
+      <!-- Logo -->
+      <h1 class="text-white font-bold text-5xl">
+        <span class="text-5xl text-brightOrange">D</span>ot
+        <span class="text-5xl text-brightOrange">C</span>om
+      </h1>
+      <!-- Desktop Menu -->
+      <div class="hidden text-white space-x-7 text-bold lg:flex">
+        <a href="#Home">Home</a>
+        <a href="#AboutUs">About</a>
+        <a href="#Services">Services</a>
+        <a href="#Pricing">Pricing</a>
+        <a href="#">Pages</a>
+        <a href="#">Contact</a>
+      </div>
+      <!-- Hamburger Icon -->
+      <button id="menu-btn" class="block hamburger lg:hidden focus:outline-none">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+      
+    </div>
+    <!-- Mobile Menu -->
+    <div class="hidden text-center bg-darkGray menu-mobile flex-col text-white pt-20 pb-4 space-y-4 text-bold">
+      <a href="#Home">Home</a>
+      <a href="#AboutUs">About</a>
+      <a href="#Services">Services</a>
+      <a href="#Pricing">Pricing</a>
+      <a href="#">Pages</a>
+      <a href="#">Contact</a>
+    </div> 
+  </nav>
+
+  <!-- Home section -->
+  <section id="Home">
+    <!-- Flex container -->
+    <div class="hero-container relative container  flex flex-col min-w-full">
+      <!-- Modal -->
+      <div class="min-h-full w-full bg-black opacity-70"></div>
+      <div class="min-h-full flex flex-col px-12 space-y-6 justify-center absolute md:w-1/2">
+        <h3 class="text-2xl text-white text-left ">CREATIVE AGENCY</h3>
+        <h3 class="text-5xl text-white text-left font-bold">
+          Highly Professional Team Members
+        </h3>
+        <button class="rounded-lg bg-brightOrange py-2 px-4 w-fit">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section id="AboutUs">
+    <!-- Flex container -->
+    <div class="container flex flex-col mt-20 mx-auto space-y-8 items-center md:px-4">
+      <!-- About content and image -->
+      <div class="flex flex-col items-center space-y-8 lg:flex-row lg:space-x-12">
+        <!-- About Image -->
+        <div class="p-4 border-2 lg:w-1/2">
+          <img src="./img/about.jpg" alt="" />
+        </div>
+        <!-- About content -->
+        <div class="flex flex-col space-y-6 text-left lg:w-1/2">
+          <h3 class="bg-brightOrange p-0 w-fit text-sm text-white font-bold uppercase">
+            Who we are
+          </h3>
+          <h1 class="text-black text-4xl font-bold">
+            Most Effective Creative Service Provider For Companies
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+            quod accusantium numquam commodi laborum? Esse nihil error ut
+            nobis consequatur laudantium molestiae, accusamus cumque corrupti
+            iste obcaecati dolores harum, minus perspiciatis illo aliquam
+            repellat praesentium sunt. Ipsa velit natus minima quo quis
+            dignissimos minus in! Numquam facere provident enim est.
+          </p>
+          <button class="py-2 px-4 bg-brightOrange text-black font-medium w-fit hover:bg-brightOrangeLight">
+            Read More
+          </button>
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="flex flex-col min-w-full space-y-4 whitespace-nowrap md:flex-row md:space-x-8 md:space-y-0">
+        <!-- Facebook content -->
+        <div class="flex flex-row w-full px-6 pr-20 py-6 text-right border-2 items-center">
+          <img src="img/facebook (1).png" alt="" class="h-6" />
+          <div class="ml-4 flex text-left flex-col">
+            <h3 class="font-bold">My Facebook</h3>
+            <h4>Mr.Triet(Mo) 2001</h4>
+          </div>
+        </div>
+
+        <div class="flex flex-row w-full px-6 pr-20 py-6 text-right border-2 items-center">
+          <img src="img/phone-svgrepo-com.svg" alt="" class="h-6" />
+          <div class="ml-4 flex text-left flex-col">
+            <h3 class="font-bold">My Number</h3>
+            <h4>0775509168</h4>
+          </div>
+        </div>
+
+        <div class="flex flex-row w-full px-6 pr-20 py-6 text-right border-2 items-center">
+          <img src="img/location-svgrepo-com.svg" alt="" class="h-6" />
+          <div class="ml-4 flex text-left flex-col">
+            <h3 class="font-bold">Our Office</h3>
+            <h4>151/30 HVB</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services section-->
+  <section id="Services">
+    <!-- Flex container -->
+    <div
+      class="container flex flex-col mt-20 mx-auto space-y-8 items-center md:px-4 md:space-x-6 lg:flex-row xl:w-full">
+      <!-- Services content -->
+      <div class="flex flex-col services space-y-6 text-left lg:w-1/3">
+        <h3 class="bg-brightOrange p-0 w-fit text-sm text-white font-bold uppercase">
+          What we do
+        </h3>
+        <h1 class="text-black text-4xl font-bold">
+          We Offer Creative Services
+        </h1>
+        <p class="text-2xl text-gray-500">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur magnam quod quisquam soluta possimus
+          obcaecati optio iure quae autem quis.
+        </p>
+        <button class="py-2 px-4 bg-brightOrange font-medium text-black w-fit hover:bg-brightOrangeLight">
+          Discover More
+        </button>
+      </div>
+
+      <!-- Services skill -->
+      <div class="flex flex-col space-y-6">
+        <!-- Web Design and Development container -->
+        <div class="flex flex-col space-y-6 md:flex-row md:space-x-4 md:space-y-0 ">
+          <!-- Web Design -->
+          <div class="flex flex-row space-x-6 md:w-1/2">
+            <img src="img/laptop-svgrepo-com.svg" alt="" class="h-20">
+            <div class="flex flex-col space-y-4">
+              <h3 class="font-semibold">Web Design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione magnam ipsum consequuntur non!
+                Voluptatem, perferendis.</p>
+              <a href="#" class="text-brightOrange font-semibold">Read More</a>
+            </div>
+          </div>
+          <!-- Development -->
+          <div class="flex flex-row space-x-6 md:w-1/2">
+            <img src="img/coding-web-development-svgrepo-com.svg" alt="" class="h-20">
+            <div class="flex flex-col space-y-4">
+              <h3 class="font-semibold">Development</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione magnam ipsum consequuntur non!
+                Voluptatem, perferendis.</p>
+              <a href="#" class="text-brightOrange font-semibold">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Marketing and Strategy container -->
+        <div class="flex flex-col space-y-6 md:flex-row md:space-x-4 md:space-y-0">
+          <!-- Marketing -->
+          <div class="flex flex-row space-x-6 md:w-1/2">
+            <img src="img/marketing-chart-svgrepo-com.svg" alt="" class="h-20">
+            <div class="flex flex-col space-y-4">
+              <h3 class="font-semibold">Marketing</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione magnam ipsum consequuntur non!
+                Voluptatem, perferendis.</p>
+              <a href="#" class="text-brightOrange font-semibold">Read More</a>
+            </div>
+          </div>
+          <!-- Strategy -->
+          <div class="flex flex-row space-x-6 md:w-1/2">
+            <img src="img/analytics-svgrepo-com.svg" alt="" class="h-20">
+            <div class="flex flex-col space-y-4">
+              <h3 class="font-semibold">Strategy</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione magnam ipsum consequuntur non!
+                Voluptatem, perferendis.</p>
+              <a href="#" class="text-brightOrange font-semibold">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Pricing Plan section -->
+  <section id="Pricing">
+    <!-- Flex container -->
+    <div
+      class="container flex flex-col mt-20 mx-auto space-y-8 items-center md:px-4 lg:flex-row lg:space-y-0 lg:space-x-6">
+      <div class="flex flex-col space-y-4 w-full md:flex-row md:space-y-0 md:space-x-6 lg:w-1/2">
+        <!-- Basic plan -->
+        <div class="border-2 md:w-1/2">
+          <div class="items-center space-y-4 text-center py-6 bg-brightOrange ">
+            <h3 class="font-bold text-3xl">Basic</h3>
+            <div class="flex flex-row justify-center">
+              <h1
+                class="font-extrabold text-5xl after:content-['/Mo'] after:font-normal after:text-base after:absolute after:mt-2.5">
+                49$</h1>
+            </div>
+          </div>
+          <div class="flex flex-col space-y-4 py-6 whitespace-nowrap">
+            <ul class="space-y-4 text-center">
+              <li>HTML5 & CSS3</li>
+              <li>Bootstrap 4</li>
+              <li>Responsive Layout</li>
+              <li>Compatible With All Browsers</li>
+            </ul>
+            <button class="py-2 px-4 bg-brightOrange mx-auto font-medium text-black hover:bg-brightOrangeLight">
+              Order Now
+            </button>
+          </div>
+        </div>
+        <!-- Premium plan -->
+        <div class="border-2 md:w-1/2 lg:w-1/2">
+          <div class="items-center space-y-4 text-center py-6 bg-brightOrange ">
+            <h3 class="font-bold text-3xl">Premium</h3>
+            <div class="flex flex-row justify-center">
+              <h1
+                class="font-extrabold  text-5xl after:content-['/Mo'] after:font-normal after:text-base after:absolute after:mt-2.5">
+                99$</h1>
+            </div>
+          </div>
+          <div class="flex flex-col space-y-4 py-6 whitespace-nowrap">
+            <ul class="space-y-4 text-center">
+              <li>HTML5 & CSS3</li>
+              <li>Bootstrap 4</li>
+              <li>Responsive Layout</li>
+              <li>Compatible With All Browsers</li>
+            </ul>
+            <button class="py-2 px-4 bg-brightOrange mx-auto font-medium text-black hover:bg-brightOrangeLight">
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Services content -->
+      <div class="flex flex-col services space-y-6 text-left lg:w-1/2">
+        <h3 class="bg-brightOrange p-0 w-fit text-sm text-white font-bold uppercase">
+          OUR PRICING PLAN
+        </h3>
+        <h1 class="text-black text-4xl font-bold">
+          We Offer Affordable and Flexible Packages
+        </h1>
+        <p class="text-2xl text-gray-500">
+          Lorem ut kasd dolores elitr sed est duo ea ipsum justo diam, est erat lorem. Est magna sea clita diam tempor
+          elitr
+        </p>
+        <h1 class="text-black text-2xl font-semibold">
+          Need A Custom Package?
+        </h1>
+        <button class="py-2 px-4 bg-brightOrange font-medium text-black w-fit hover:bg-brightOrangeLight">
+          Discover More
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-darkGray">
+    <!-- Flex container -->
+    <div class="container flex flex-col py-20 mx-auto mt-20 space-y-12 lg:space-y-0 lg:flex-row lg:space-x-6">
+      <!-- Information and quick links -->
+      <div class="flex flex-col space-y-8 md:flex-row md:space-x-14 lg:w-1/2 md:space-y-0">
+        <!-- Information -->
+        <div class="w-full space-y-4 md:w-1/2">
+          <!-- Logo -->
+          <h1 class="text-white font-bold text-5xl">
+            <span class="text-5xl text-brightOrange">D</span>ot
+            <span class="text-5xl text-brightOrange">C</span>om
+          </h1>
+          <p class="text-white text-xl">Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed
+            elitr sed kasd et</p>
+          <div class="flex flex-row pt-6 space-x-2">
+            <a href="#" class="rounded-full bg-brightOrange"><img src="img/facebook-svgrepo-com.svg" alt=""
+                class="h-11 p-2"></a>
+            <a href="#" class="rounded-full bg-brightOrange"><img src="img/twitter-svgrepo-com.svg" alt=""
+                class="h-11 p-2"></a>
+            <a href="#" class="rounded-full bg-brightOrange"><img src="img/instagram-svgrepo-com.svg" alt=""
+                class="h-11 p-2"></a>
+            <a href="#" class="rounded-full bg-brightOrange"><img src="img/phone-svgrepo-com.svg" alt=""
+                class="h-11 p-2"></a>
+          </div>
+        </div>
+        <!-- Quick links -->
+        <div class="flex flex-col space-y-4 md:w-1/2">
+          <h1 class="text-brightOrange font-bold text-xl">
+            Quick Links
+          </h1>
+          <ul class="text-white text-xl">
+            <a href="#Home">
+              <li class="pb-2">Home</li>
+            </a>
+            <a href="#About Us">
+              <li class="pb-2">About Us</li>
+            </a>
+            <a href="#Services">
+              <li class="pb-2">Services</li>
+            </a>
+            <a href="#Pricing">
+              <li class="pb-2">Pricing</li>
+            </a>
+            <a href="#Contact Us">
+              <li class="pb-2">Contact Us</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Popular Links and Contact -->
+      <div class="flex flex-col space-y-8 md:flex-row md:space-x-14 lg:w-1/2 md:space-y-0">
+        <!-- Popular Links -->
+        <div class="flex flex-col space-y-4 md:w-1/2">
+          <h1 class="text-brightOrange font-bold text-xl">
+            Popular Links
+          </h1>
+          <ul class="text-white text-xl">
+            <a href="#Home">
+              <li class="pb-2">Home</li>
+            </a>
+            <a href="#AboutUs">
+              <li class="pb-2">About Us</li>
+            </a>
+            <a href="#Services">
+              <li class="pb-2">Services</li>
+            </a>
+            <a href="#Pricing">
+              <li class="pb-2">Pricing</li>
+            </a>
+            <a href="#Contact Us">
+              <li class="pb-2">Contact Us</li>
+            </a>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="flex flex-col space-y-4 md:w-1/2">
+          <h1 class="text-brightOrange font-bold text-xl">
+            Get In Touch
+          </h1>
+          <ul class="text-white text-base">
+            <li class="pb-2">Dolor clita stet nonumy clita diam vero, et et ipsum diam labore</li>
+            <li class="pb-2">123 Street, New York, USA</li>
+            <li class="pb-2">+012 345 67890</li>
+            <li class="pb-2">info@example.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto flex justify-center pb-10 ">
+      <span class="font-semibold text-xl text-white">© Triet Minh. All Rights Reserved. Designed by HTML Codex</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
